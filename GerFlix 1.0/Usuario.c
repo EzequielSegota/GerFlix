@@ -32,12 +32,56 @@ void inicializarUsuariosHardCode(eUsuario usuarios[])
 
     }
 
+}
 
+void mostrarListaUsuarios(eUsuario listaUsuario[], int lenghtUsuario)
+{
+    int i;
+    for(i=0;i<lenghtUsuario;i++)
+    {
+        if(listaUsuario[i].estado==1)
+        printf("\n\nEl ID del usuario es: %d\nEl nombre del usuario es: %s\nLa ID de la serie es: %d\n",listaUsuario[i].idUsuario,listaUsuario[i].nombre,listaUsuario[i].idSerie);
+    }
+}
 
+void mostrarUsuarioConSuSerie(eUsuario usuarioSerie[],int lenghtUsuario,eSerie serieUsuario[], int lenghtSerie)
+{
+    int i,j;
 
+    for(i=0;i<lenghtUsuario;i++)
+    {
+        if(usuarioSerie[i].estado==1)
+        {
+            for(j=0;j<lenghtSerie;j++)
+            {
+                if(usuarioSerie[i].idSerie==serieUsuario[j].idSerie)
+                {
+                    printf("\n\nEl nombre del usuario es: %s\nY la serie que ve es: %s\n",usuarioSerie[i].nombre,serieUsuario[j].nombre);
+                }
+            }
+        }
+    }
+}
 
+void mostrarSerieConUsuario(eSerie serieUsuario[], int lenghtSerie, eUsuario usuarioSerie[], int lenghtUsuario)
+{
+    int i,j;
 
+    for(i=0;i<lenghtSerie;i++)
+    {
+        if(serieUsuario[i].estado==1)
+        {
+            printf("\n\n\nLa serie es: %s",serieUsuario[i].nombre);
 
-
+            for(j=0;j<lenghtUsuario;j++)
+            {
+                if(serieUsuario[i].idSerie==usuarioSerie[j].idSerie)
+                {
+                    printf("\nLos usuarios que la ven son: %s\n",usuarioSerie[j].nombre);
+                }
+            }
+        }
+    }
 
 }
+

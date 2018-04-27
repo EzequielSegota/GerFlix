@@ -42,5 +42,14 @@ void inicializarSeriesHardCode(eSerie series[])
 }
 
 
+void mostrarListaSeries(eSerie listaSeries[],int lenghtSerie)
+{
+    int i;
 
+    for(i=0;i<lenghtSerie;i++)
+    {
+        if(listaSeries[i].estado==1)
+        printf("\n\nEl ID de la serie es: %d\nEl nombre de la serie es: %s\nEl genero de la serie: %s\nLa cantidad de temporadas es: %d\n",listaSeries[i].idSerie, listaSeries[i].nombre, listaSeries[i].genero, listaSeries[i].cantidadTemporadas);
+    }
+}
 

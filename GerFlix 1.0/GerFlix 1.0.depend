@@ -16,3 +16,20 @@
 1524601547 source:c:\test\scarafilo\gerflix 1.0\usuario.c
 	"Usuario.h"
 
+1524838305 source:/home/alumno/Escritorio/GerFlix-master/GerFlix 1.0/Usuario.c
+	"Usuario.h"
+
+1524831982 /home/alumno/Escritorio/GerFlix-master/GerFlix 1.0/Usuario.h
+	"Serie.h"
+
+1524831982 /home/alumno/Escritorio/GerFlix-master/GerFlix 1.0/Serie.h
+
+1524833736 source:/home/alumno/Escritorio/GerFlix-master/GerFlix 1.0/Serie.c
+	"Serie.h"
+	<string.h>
+
+1524839919 source:/home/alumno/Escritorio/GerFlix-master/GerFlix 1.0/main.c
+	<stdio.h>
+	<stdlib.h>
+	"Usuario.h"
+
